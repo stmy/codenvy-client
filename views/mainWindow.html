@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Codenvy</title>
+    <script src="./mainWindow.js"></script>
+    <link rel="stylesheet" type="text/css" href="./mainWindow.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="titlebar">
+        <div id="title">
+          <img src="./images/logo-codenvy.svg" id="logo" />
+          <span id="caption">Codenvy</span>
+        </div>
+        <div id="title-buttons">
+          <button id="minimize-button">_</button>
+          <button id="maximize-button">□</button>
+          <button id="close-button">×</button>
+        </div>
+      </div>
+      <webview id="view" src="https://codenvy.io/"></webview>
+    </div>
+  </body>
+</html>

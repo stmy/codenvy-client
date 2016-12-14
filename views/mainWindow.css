@@ -1,0 +1,61 @@
+body, html { margin: 0; padding: 0; height: 100%; }
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(34, 75, 136);
+}
+
+#titlebar {
+  -webkit-app-region: drag;
+  background: #292c2f;
+  border-bottom: 1px solid #33373b;
+  display: flex;
+  flex-direction: row;
+}
+
+#title {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+#caption {
+  color: white;
+  font-family: Arial;
+  font-size: 0.8em;
+}
+
+#title-buttons {
+  white-space: nowrap;
+}
+
+#title-buttons button {
+  -webkit-app-region: no-drag;
+  background: transparent;
+  border: transparent;
+  color: white;
+  width: 2em;
+  height: 100%;
+  outline: none;
+}
+
+#title-buttons button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#title-buttons button:active {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+  height: 1.2em;
+  width: auto;
+  margin: 0.3em 0.5em 0.1em 0.3em;
+}
+
+#view {
+  flex-grow: 1;
+}
